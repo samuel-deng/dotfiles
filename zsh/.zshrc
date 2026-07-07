@@ -134,3 +134,19 @@ alias df="df -h"           # -h prints human readable format
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Additional zsh plugins installed
+# - zsh-syntax-highlighting
+# - zsh-autosuggestions
+# - zsh-history-substring-search
+
+# zsh syntax highlighting (brew install zsh-syntax-highlighting)
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# zsh-autosuggestions (brew install zsh-autosuggestions)
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# zsh-history-substring-search 
+source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
