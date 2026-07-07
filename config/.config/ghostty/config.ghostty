@@ -1,0 +1,4 @@
+keybind = global:cmd+grave_accent=toggle_quick_terminal
+quick-terminal-position = bottom
+theme = Gruvbox Material Dark
+

@@ -114,6 +114,7 @@ source $ZSH/oh-my-zsh.sh
 alias docs="cd ~/Documents/"
 alias desk="cd ~/Desktop/"
 alias todo="open ~/Documents/todo.md"
+alias weather="curl wttr.in"
 
 # Make shorthands for common flags
 alias ll="ls -lh"
@@ -139,6 +140,7 @@ alias df="df -h"           # -h prints human readable format
 # - zsh-syntax-highlighting
 # - zsh-autosuggestions
 # - zsh-history-substring-search
+# - bat (upgraded cat)
 
 # zsh syntax highlighting (brew install zsh-syntax-highlighting)
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -150,3 +152,6 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
+
+# bat theme
+export BAT_THEME="gruvbox-dark"
