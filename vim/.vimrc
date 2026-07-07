@@ -1,6 +1,13 @@
 " Plugins
 call plug#begin('~/.vim/plugged')
 
+" Vim Settings
+set number	" set line numbers
+set showcmd 	" show command in bottom bar
+set cursorline 	" highlights current cursor line
+set hlsearch	" highlight search by default
+set path+=**	" searching with find goes into subdirs
+
 " Add the gruvbox repository here
 Plug 'morhetz/gruvbox'
 
