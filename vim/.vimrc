@@ -7,16 +7,14 @@ set showcmd 	" show command in bottom bar
 set cursorline 	" highlights current cursor line
 set hlsearch	" highlight search by default
 set path+=**	" searching with find goes into subdirs
+syntax on	" syntax highlighting
 
-" Add the gruvbox repository here
+" Theme: Gruvbox 
 Plug 'morhetz/gruvbox'
-
 call plug#end()
+
 let g:gruvbox_contrast_dark = 'soft'
 let g:gruvbox_contrast_light = 'soft'
-
-" Theme configuration must go AFTER call plug#end()
-syntax on
-set termguicolors
 set background=dark    " Use 'light' if you prefer the light version
+set termguicolors
 colorscheme gruvbox
